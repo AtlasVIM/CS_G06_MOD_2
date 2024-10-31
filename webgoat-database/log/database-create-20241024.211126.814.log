@@ -1,0 +1,413 @@
+[2024-10-24 21:11:26] This is codeql database create webgoat-database --language=java --overwrite
+[2024-10-24 21:11:26] Log file was started late.
+[2024-10-24 21:11:26] [PROGRESS] database create> Initializing database at C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2\webgoat-database.
+[2024-10-24 21:11:26] Running plumbing command: codeql database init --overwrite --language=java --extractor-options-verbosity=1 --qlconfig-file=C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2\qlconfig.yml --source-root=C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2 --allow-missing-source-root=false --allow-already-existing -- C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2\webgoat-database
+[2024-10-24 21:11:26] Calling plumbing command: codeql resolve languages --extractor-options-verbosity=1 --format=betterjson
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\.codeqlmanifest.json
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\cpp\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\csharp\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\csv\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\go\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\html\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\javascript\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\properties\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\python\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\ruby\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\swift\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\xml\codeql-extractor.yml.
+[2024-10-24 21:11:27] [DETAILS] resolve languages> Parsing C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\yaml\codeql-extractor.yml.
+[2024-10-24 21:11:27] Plumbing command codeql resolve languages completed:
+                      {
+                        "aliases" : {
+                          "c" : "cpp",
+                          "c++" : "cpp",
+                          "c-c++" : "cpp",
+                          "c-cpp" : "cpp",
+                          "c#" : "csharp",
+                          "java-kotlin" : "java",
+                          "kotlin" : "java",
+                          "javascript-typescript" : "javascript",
+                          "typescript" : "javascript"
+                        },
+                        "extractors" : {
+                          "cpp" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\cpp",
+                              "extractor_options" : {
+                                "scale_timeouts" : {
+                                  "title" : "Value to scale compiler introspection timeouts with",
+                                  "description" : "The extractor attempts to determine what compiler the source code being extracted is compiled with. To this end the extractor makes additional calls to the compiler, some of which are expected to return within a certain fixed time (either 10s or 15s). On some systems that are under high load this time might be too short, and can be scaled up using this option.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-9]+"
+                                },
+                                "log_verbosity" : {
+                                  "title" : "Verbosity of the extractor logging",
+                                  "description" : "Set the verbosity of the extractor logging to 'quiet' (0), 'normal' (1), 'chatty' (2), or 'noisy' (3). The default is 'normal'.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-3]"
+                                }
+                              }
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
+                                  "description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "binlog" : {
+                                  "title" : "Binlog",
+                                  "description" : "[EXPERIMENTAL] The value is a path to the MsBuild binary log file that should be extracted. This option only works when `--build-mode none` is also specified.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\csv"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\go",
+                              "extractor_options" : {
+                                "extract_tests" : {
+                                  "title" : "Whether to include Go test files in the CodeQL database.",
+                                  "description" : "A value indicating whether Go test files should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "extract_vendor_dirs" : {
+                                  "title" : "Whether to include Go vendor directories in the CodeQL database.",
+                                  "description" : "A value indicating whether Go vendor directories should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\html"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                },
+                                "add_prefer_source" : {
+                                  "title" : "Whether to always prefer source files over class files.",
+                                  "description" : "A value indicating whether source files should be preferred over class files. If set to 'true', the extraction adds '-Xprefer:source' to the javac command line. If set to 'false', the extraction uses the default javac behavior ('-Xprefer:newer'). The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction (experimental).",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\javascript",
+                              "extractor_options" : {
+                                "skip_types" : {
+                                  "title" : "Skip type extraction for TypeScript",
+                                  "description" : "Whether to skip the extraction of types in a TypeScript application",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\properties"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\python",
+                              "extractor_options" : {
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Python extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "python_executable_name" : {
+                                  "title" : "Controls the name of the Python executable used by the Python extractor.",
+                                  "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(py|python|python3)$"
+                                }
+                              }
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ],
+                          "swift" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\swift"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\xml"
+                            }
+                          ],
+                          "yaml" : [
+                            {
+                              "extractor_root" : "C:\\Users\\calda\\AppData\\Roaming\\Code\\User\\globalStorage\\github.vscode-codeql\\distribution1\\codeql\\yaml"
+                            }
+                          ]
+                        }
+                      }
+[2024-10-24 21:11:27] [PROGRESS] database init> Calculating baseline information in C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2
+[2024-10-24 21:11:27] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2024-10-24 21:11:27] [DETAILS] database init> Running command in C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\scc.exe --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2024-10-24 21:12:04] Using configure-baseline script C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\javascript\tools\configure-baseline.cmd.
+[2024-10-24 21:12:04] [PROGRESS] database init> Running command in C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2: [C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\javascript\tools\configure-baseline.cmd]
+[2024-10-24 21:12:04] [SPAMMY] database init> Ignored an additional 9120 files when processing baseline information for JavaScript due to paths and paths-ignore configuration.
+[2024-10-24 21:12:04] [SPAMMY] database init> Ignored an additional 2419 files when processing baseline information for TypeScript Typings due to paths and paths-ignore configuration.
+[2024-10-24 21:12:04] [SPAMMY] database init> Ignored an additional 80 files when processing baseline information for TypeScript due to paths and paths-ignore configuration.
+[2024-10-24 21:12:04] Using configure-baseline script C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\go\tools\configure-baseline.cmd.
+[2024-10-24 21:12:04] [PROGRESS] database init> Running command in C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2: [C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\go\tools\configure-baseline.cmd]
+[2024-10-24 21:12:05] [SPAMMY] database init> Found 215 baseline files for javascript.
+[2024-10-24 21:12:05] [SPAMMY] database init> Found 360 baseline files for java.
+[2024-10-24 21:12:05] [SPAMMY] database init> Found 6 baseline files for python.
+[2024-10-24 21:12:05] [SPAMMY] database init> Found 3 baseline files for swift.
+[2024-10-24 21:12:05] [SPAMMY] database init> Found 4 baseline files for cpp.
+[2024-10-24 21:12:05] [SPAMMY] database init> Found 1 baseline files for csharp.
+[2024-10-24 21:12:05] [SPAMMY] database init> Found 1 baseline files for go.
+[2024-10-24 21:12:05] [SPAMMY] database init> Found 1 baseline files for ruby.
+[2024-10-24 21:12:05] [PROGRESS] database init> Calculated baseline information for languages: cpp, csharp, go, java, javascript, python, ruby, swift (37.7s).
+[2024-10-24 21:12:05] [PROGRESS] database init> Resolving extractor java.
+[2024-10-24 21:12:05] [DETAILS] database init> Found candidate extractor root for java: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java.
+[2024-10-24 21:12:05] [PROGRESS] database init> Successfully loaded extractor Java/Kotlin (java) from C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java.
+[2024-10-24 21:12:05] [PROGRESS] database init> Created skeleton CodeQL database at C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2\webgoat-database. This in-progress database is ready to be populated by an extractor.
+[2024-10-24 21:12:05] Plumbing command codeql database init completed.
+[2024-10-24 21:12:05] Using autobuild script C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\autobuild.cmd.
+[2024-10-24 21:12:05] [DETAILS] database create> Detected autobuild command for Java/Kotlin: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\autobuild.cmd.
+[2024-10-24 21:12:05] [PROGRESS] database create> Running build command: [C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\autobuild.cmd]
+[2024-10-24 21:12:05] Running plumbing command: codeql database trace-command --working-dir=C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2 --index-traceless-dbs --no-db-cluster -- C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2\webgoat-database C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\autobuild.cmd
+[2024-10-24 21:12:05] [PROGRESS] database trace-command> Running command in C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2: [C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\autobuild.cmd]
+[2024-10-24 21:12:06] [build-stdout] [2024-10-24 21:12:06] Build directory is .\WebGoat
+[2024-10-24 21:12:06] [build-stdout] [2024-10-24 21:12:06] [autobuild] > mvn -N org.apache.maven.plugins:maven-wrapper-plugin:3.3.0:wrapper -Dtype=bin 
+[2024-10-24 21:12:08] [build-stdout] [2024-10-24 21:12:08] [autobuild] [INFO] Scanning for projects...
+[2024-10-24 21:12:08] [build-stdout] [2024-10-24 21:12:08] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/3.2.6/spring-boot-starter-parent-3.2.6.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/3.2.6/spring-boot-starter-parent-3.2.6.pom (13 kB at 31 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/3.2.6/spring-boot-dependencies-3.2.6.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/3.2.6/spring-boot-dependencies-3.2.6.pom (116 kB at 1.1 MB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/ee10/jetty-ee10-bom/12.0.11/jetty-ee10-bom-12.0.11.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/ee10/jetty-ee10-bom/12.0.11/jetty-ee10-bom-12.0.11.pom (9.3 kB at 309 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-bom/3.24.2/assertj-bom-3.24.2.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-bom/3.24.2/assertj-bom-3.24.2.pom (3.7 kB at 159 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/zipkin/brave/brave-bom/5.16.0/brave-bom-5.16.0.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/zipkin/brave/brave-bom/5.16.0/brave-bom-5.16.0.pom (12 kB at 259 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/zipkin/reporter2/zipkin-reporter-bom/2.16.3/zipkin-reporter-bom-2.16.3.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/zipkin/reporter2/zipkin-reporter-bom/2.16.3/zipkin-reporter-bom-2.16.3.pom (6.9 kB at 299 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/com/datastax/oss/java-driver-bom/4.17.0/java-driver-bom-4.17.0.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/com/datastax/oss/java-driver-bom/4.17.0/java-driver-bom-4.17.0.pom (4.1 kB at 180 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-bom/4.2.25/metrics-bom-4.2.25.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-bom/4.2.25/metrics-bom-4.2.25.pom (8.2 kB at 391 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-parent/4.2.25/metrics-parent-4.2.25.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-parent/4.2.25/metrics-parent-4.2.25.pom (21 kB at 626 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-bom/4.0.5/jaxb-bom-4.0.5.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-bom/4.0.5/jaxb-bom-4.0.5.pom (12 kB at 555 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/ee4j/project/1.0.9/project-1.0.9.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/ee4j/project/1.0.9/project-1.0.9.pom (16 kB at 1.0 MB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-bom/4.0.21/groovy-bom-4.0.21.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-bom/4.0.21/groovy-bom-4.0.21.pom (27 kB at 1.3 MB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/14.0.28.Final/infinispan-bom-14.0.28.Final.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/14.0.28.Final/infinispan-bom-14.0.28.Final.pom (25 kB at 1.6 MB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/14.0.28.Final/infinispan-build-configuration-parent-14.0.28.Final.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-build-configuration-parent/14.0.28.Final/infinispan-build-configuration-parent-14.0.28.Final.pom (24 kB at 590 kB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/39/jboss-parent-39.pom
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/39/jboss-parent-39.pom (68 kB at 2.8 MB/s)
+[2024-10-24 21:12:09] [build-stdout] [2024-10-24 21:12:09] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.15.4/jackson-bom-2.15.4.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.15.4/jackson-bom-2.15.4.pom (18 kB at 1.2 MB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.15/jackson-parent-2.15.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.15/jackson-parent-2.15.pom (6.5 kB at 502 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/50/oss-parent-50.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/50/oss-parent-50.pom (24 kB at 1.6 MB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/jersey/jersey-bom/3.1.6/jersey-bom-3.1.6.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/jersey/jersey-bom/3.1.6/jersey-bom-3.1.6.pom (21 kB at 1.2 MB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/ee4j/project/1.0.8/project-1.0.8.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/ee4j/project/1.0.8/project-1.0.8.pom (15 kB at 1.2 MB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/11.0.18/jetty-bom-11.0.18.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/11.0.18/jetty-bom-11.0.18.pom (19 kB at 2.1 MB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-bom/1.9.24/kotlin-bom-1.9.24.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-bom/1.9.24/kotlin-bom-1.9.24.pom (9.1 kB at 285 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.7.3/kotlinx-coroutines-bom-1.7.3.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.7.3/kotlinx-coroutines-bom-1.7.3.pom (4.3 kB at 215 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-bom/1.6.3/kotlinx-serialization-bom-1.6.3.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-serialization-bom/1.6.3/kotlinx-serialization-bom-1.6.3.pom (3.7 kB at 183 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.21.1/log4j-bom-2.21.1.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.21.1/log4j-bom-2.21.1.pom (12 kB at 623 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/logging-parent/10.1.1/logging-parent-10.1.1.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/logging-parent/10.1.1/logging-parent-10.1.1.pom (39 kB at 1.6 MB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-bom/1.12.6/micrometer-bom-1.12.6.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-bom/1.12.6/micrometer-bom-1.12.6.pom (7.9 kB at 494 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-tracing-bom/1.2.6/micrometer-tracing-bom-1.2.6.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/micrometer/micrometer-tracing-bom/1.2.6/micrometer-tracing-bom-1.2.6.pom (4.5 kB at 376 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-bom/5.7.0/mockito-bom-5.7.0.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-bom/5.7.0/mockito-bom-5.7.0.pom (3.0 kB at 246 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.110.Final/netty-bom-4.1.110.Final.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.110.Final/netty-bom-4.1.110.Final.pom (14 kB at 859 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-bom/4.12.0/okhttp-bom-4.12.0.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/com/squareup/okhttp3/okhttp-bom/4.12.0/okhttp-bom-4.12.0.pom (3.1 kB at 127 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/opentelemetry/opentelemetry-bom/1.31.0/opentelemetry-bom-1.31.0.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/opentelemetry/opentelemetry-bom/1.31.0/opentelemetry-bom-1.31.0.pom (7.0 kB at 249 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/prometheus/simpleclient_bom/0.16.0/simpleclient_bom-0.16.0.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/prometheus/simpleclient_bom/0.16.0/simpleclient_bom-0.16.0.pom (6.0 kB at 107 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/prometheus/parent/0.16.0/parent-0.16.0.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/prometheus/parent/0.16.0/parent-0.16.0.pom (13 kB at 447 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/com/querydsl/querydsl-bom/5.0.0/querydsl-bom-5.0.0.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/com/querydsl/querydsl-bom/5.0.0/querydsl-bom-5.0.0.pom (7.2 kB at 597 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2023.0.6/reactor-bom-2023.0.6.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2023.0.6/reactor-bom-2023.0.6.pom (4.8 kB at 298 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/rest-assured/rest-assured-bom/5.3.2/rest-assured-bom-5.3.2.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/rest-assured/rest-assured-bom/5.3.2/rest-assured-bom-5.3.2.pom (4.3 kB at 355 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/io/rsocket/rsocket-bom/1.1.3/rsocket-bom-1.1.3.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/io/rsocket/rsocket-bom/1.1.3/rsocket-bom-1.1.3.pom (2.6 kB at 329 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-bom/4.14.1/selenium-bom-4.14.1.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-bom/4.14.1/selenium-bom-4.14.1.pom (6.0 kB at 26 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/amqp/spring-amqp-bom/3.1.5/spring-amqp-bom-3.1.5.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/amqp/spring-amqp-bom/3.1.5/spring-amqp-bom-3.1.5.pom (3.9 kB at 228 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/batch/spring-batch-bom/5.1.2/spring-batch-bom-5.1.2.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/batch/spring-batch-bom/5.1.2/spring-batch-bom-5.1.2.pom (3.2 kB at 116 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/2023.1.6/spring-data-bom-2023.1.6.pom
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/2023.1.6/spring-data-bom-2023.1.6.pom (5.5 kB at 172 kB/s)
+[2024-10-24 21:12:10] [build-stdout] [2024-10-24 21:12:10] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/6.1.8/spring-framework-bom-6.1.8.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/6.1.8/spring-framework-bom-6.1.8.pom (5.8 kB at 110 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/6.2.5/spring-integration-bom-6.2.5.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/6.2.5/spring-integration-bom-6.2.5.pom (10 kB at 872 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/pulsar/spring-pulsar-bom/1.0.6/spring-pulsar-bom-1.0.6.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/pulsar/spring-pulsar-bom/1.0.6/spring-pulsar-bom-1.0.6.pom (2.7 kB at 32 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/restdocs/spring-restdocs-bom/3.0.1/spring-restdocs-bom-3.0.1.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/restdocs/spring-restdocs-bom/3.0.1/spring-restdocs-bom-3.0.1.pom (2.6 kB at 81 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/6.2.4/spring-security-bom-6.2.4.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/6.2.4/spring-security-bom-6.2.4.pom (5.3 kB at 333 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/session/spring-session-bom/3.2.3/spring-session-bom-3.2.3.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/session/spring-session-bom/3.2.3/spring-session-bom-3.2.3.pom (2.9 kB at 90 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/ws/spring-ws-bom/4.0.11/spring-ws-bom-4.0.11.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/ws/spring-ws-bom/4.0.11/spring-ws-bom-4.0.11.pom (3.5 kB at 292 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/testcontainers/testcontainers-bom/1.19.8/testcontainers-bom-1.19.8.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/testcontainers/testcontainers-bom/1.19.8/testcontainers-bom-1.19.8.pom (10 kB at 651 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/ee10/jetty-ee10-bom/12.0.9/jetty-ee10-bom-12.0.9.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/ee10/jetty-ee10-bom/12.0.9/jetty-ee10-bom-12.0.9.pom (9.2 kB at 385 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/12.0.9/jetty-bom-12.0.9.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/12.0.9/jetty-bom-12.0.9.pom (14 kB at 294 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-wrapper-plugin/3.3.0/maven-wrapper-plugin-3.3.0.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-wrapper-plugin/3.3.0/maven-wrapper-plugin-3.3.0.pom (7.6 kB at 478 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper-parent/3.3.0/maven-wrapper-parent-3.3.0.pom
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper-parent/3.3.0/maven-wrapper-parent-3.3.0.pom (5.1 kB at 255 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-wrapper-plugin/3.3.0/maven-wrapper-plugin-3.3.0.jar
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-wrapper-plugin/3.3.0/maven-wrapper-plugin-3.3.0.jar (26 kB at 906 kB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] 
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] ---------------------< org.owasp.webgoat:webgoat >----------------------
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] Building WebGoat 2024.2-SNAPSHOT
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO]   from pom.xml
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] --------------------------------[ jar ]---------------------------------
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] 
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] --- wrapper:3.3.0:wrapper (default-cli) @ webgoat ---
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper-distribution/3.3.0/maven-wrapper-distribution-3.3.0-bin.zip
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper-distribution/3.3.0/maven-wrapper-distribution-3.3.0-bin.zip (65 kB at 2.0 MB/s)
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] Unpacked bin type wrapper distribution org.apache.maven.wrapper:maven-wrapper-distribution:zip:bin:3.3.0
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] Configuring .mvn/wrapper/maven-wrapper.properties to use Maven 3.9.9 and download from https://repo.maven.apache.org/maven2
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] ------------------------------------------------------------------------
+[2024-10-24 21:12:11] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] BUILD SUCCESS
+[2024-10-24 21:12:12] [build-stdout] [2024-10-24 21:12:11] [autobuild] [INFO] ------------------------------------------------------------------------
+[2024-10-24 21:12:12] [build-stdout] [2024-10-24 21:12:12] [autobuild] [INFO] Total time:  3.399 s
+[2024-10-24 21:12:12] [build-stdout] [2024-10-24 21:12:12] [autobuild] [INFO] Finished at: 2024-10-24T21:12:11+01:00
+[2024-10-24 21:12:12] [build-stdout] [2024-10-24 21:12:12] [autobuild] [INFO] ------------------------------------------------------------------------
+[2024-10-24 21:12:12] [build-stdout] [2024-10-24 21:12:12] [autobuild] > C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2\.\WebGoat\mvnw.cmd clean package -f pom.xml -B -V -e -Dfindbugs.skip -Dcheckstyle.skip -Dpmd.skip=true -Dspotbugs.skip -Denforcer.skip -Dmaven.javadoc.skip -DskipTests -Dmaven.test.skip.exec -Dlicense.skip=true -Drat.skip=true -Dspotless.check.skip=true
+[2024-10-24 21:12:12] [build-stdout] [2024-10-24 21:12:12] [autobuild] 'C:\Users\calda\OneDrive\Ambiente' is not recognized as an internal or external command,
+[2024-10-24 21:12:12] [build-stdout] [2024-10-24 21:12:12] [autobuild] operable program or batch file.
+[2024-10-24 21:12:12] [build-stdout] [2024-10-24 21:12:12] [ERROR] Spawned process exited abnormally (code 1; tried to run: [C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Users\calda\OneDrive\Ambiente, de, Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2\.\WebGoat\mvnw.cmd, clean, package, -f, pom.xml, -B, -V, -e, -Dfindbugs.skip, -Dcheckstyle.skip, -Dpmd.skip=true, -Dspotbugs.skip, -Denforcer.skip, -Dmaven.javadoc.skip, -DskipTests, -Dmaven.test.skip.exec, -Dlicense.skip=true, -Drat.skip=true, -Dspotless.check.skip=true])
+[2024-10-24 21:12:12] [ERROR] Spawned process exited abnormally (code 1; tried to run: [C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\tracer.exe, C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\autobuild.cmd])
+[2024-10-24 21:12:12] Exception caught at top level: Exit status 1 from command: [C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\autobuild.cmd]
+                      com.semmle.cli2.Commandline.executeAndCheckResult(Commandline.java:170)
+                      com.semmle.cli2.Commandline.runWithoutReturn(Commandline.java:123)
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:227)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:126)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:863)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:442)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:861)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:119)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:199)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:185)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:863)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:442)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:861)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:745)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:726)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:237)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:258)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)

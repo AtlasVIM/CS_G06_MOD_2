@@ -1,0 +1,11 @@
+# Ignore for example failing-tests.json from AVA
+node_modules/.cache/
+# Java build files
+.gradle/
+*.class
+# macOS
+.DS_Store
+# eslint sarif report
+eslint.sarif
+# for local incremental compilation
+tsconfig.tsbuildinfo

@@ -1,0 +1,162 @@
+[T 20:12:05 9356] Initializing tracer.
+[T 20:12:05 9356] Initializing tags.
+[T 20:12:05 9356] CodeQL CLI version 2.19.2
+[T 20:12:05 9356] Initializing tracer.
+[T 20:12:05 9356] Initializing tags.
+[T 20:12:05 9356] Allocated ID EC0560870000248C_0000000000000001 (parent )
+[T 20:12:05 9356] ==== Candidate to intercept: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe (12932) ====
+[T 20:12:05 9356] Lua: === Intercepted call to c:\users\calda\appdata\roaming\code\user\globalstorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe ===
+[T 20:12:05 9356] Executing the following tracer actions:
+[T 20:12:05 9356] Tracer actions:
+[T 20:12:05 9356] pre_invocations(0)
+[T 20:12:05 9356] post_invocations(0)
+[T 20:12:05 9356] trace_languages(1): [java]
+[T 20:12:05 12932] Initializing tracer.
+[T 20:12:05 12932] Initializing tags.
+[T 20:12:05 12932] ID set to EC0560870000248C_0000000000000001 (parent root)
+[T 20:12:05 12932] Allocated ID 030B258C00003284_0000000000000001 (parent EC0560870000248C_0000000000000001)
+[T 20:12:05 12932] ==== Candidate to intercept: C:\Windows\System32\cmd.exe (6244) ====
+[T 20:12:05 12932] Lua: === Intercepted call to c:\windows\system32\cmd.exe ===
+[T 20:12:05 12932] Executing the following tracer actions:
+[T 20:12:05 12932] Tracer actions:
+[T 20:12:05 12932] pre_invocations(0)
+[T 20:12:05 12932] post_invocations(0)
+[T 20:12:05 12932] trace_languages(1): [java]
+[T 20:12:05 6244] Initializing tracer.
+[T 20:12:05 6244] Initializing tags.
+[T 20:12:05 6244] ID set to 030B258C00003284_0000000000000001 (parent EC0560870000248C_0000000000000001)
+[T 20:12:05 6244] Allocated ID 7846EFB200001864_0000000000000001 (parent 030B258C00003284_0000000000000001)
+[T 20:12:05 6244] ==== Candidate to intercept: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\java\bin\java.exe (1724) ====
+[T 20:12:05 6244] Lua: === Intercepted call to c:\users\calda\appdata\roaming\code\user\globalstorage\github.vscode-codeql\distribution1\codeql\tools\win64\java\bin\java.exe ===
+[T 20:12:05 6244] Executing the following tracer actions:
+[T 20:12:05 6244] Tracer actions:
+[T 20:12:05 6244] pre_invocations(0)
+[T 20:12:05 6244] post_invocations(0)
+[T 20:12:05 6244] trace_languages(1): [java]
+[T 20:12:05 1724] Initializing tracer.
+[T 20:12:05 1724] Initializing tags.
+[T 20:12:05 1724] ID set to 7846EFB200001864_0000000000000001 (parent 030B258C00003284_0000000000000001)
+[T 20:12:05 1724] Passing through -javaagent:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 20:12:05 1724] Passing through -Xbootclasspath/a:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar to underlying JVM.
+[T 20:12:05 1724] Intercepted JVM creation with extra hidden args: ['-javaagent:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar' ] (result: 1, 0).
+[T 20:12:06 1724] Allocated ID B952ED1B000006BC_0000000000000001 (parent 7846EFB200001864_0000000000000001)
+[T 20:12:06 1724] ==== Candidate to intercept: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe (18768) ====
+[T 20:12:06 1724] Lua: === Intercepted call to c:\users\calda\appdata\roaming\code\user\globalstorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe ===
+[T 20:12:06 1724] Executing the following tracer actions:
+[T 20:12:06 1724] Tracer actions:
+[T 20:12:06 1724] pre_invocations(0)
+[T 20:12:06 1724] post_invocations(0)
+[T 20:12:06 1724] trace_languages(1): [java]
+[T 20:12:06 18768] Initializing tracer.
+[T 20:12:06 18768] Initializing tags.
+[T 20:12:06 18768] ID set to B952ED1B000006BC_0000000000000001 (parent 7846EFB200001864_0000000000000001)
+[T 20:12:06 18768] Allocated ID 694990B800004950_0000000000000001 (parent B952ED1B000006BC_0000000000000001)
+[T 20:12:06 18768] ==== Candidate to intercept: C:\Windows\System32\cmd.exe (4208) ====
+[T 20:12:06 18768] Lua: === Intercepted call to c:\windows\system32\cmd.exe ===
+[T 20:12:06 18768] Executing the following tracer actions:
+[T 20:12:06 18768] Tracer actions:
+[T 20:12:06 18768] pre_invocations(0)
+[T 20:12:06 18768] post_invocations(0)
+[T 20:12:06 18768] trace_languages(1): [java]
+[T 20:12:06 4208] Initializing tracer.
+[T 20:12:06 4208] Initializing tags.
+[T 20:12:06 4208] ID set to 694990B800004950_0000000000000001 (parent B952ED1B000006BC_0000000000000001)
+[T 20:12:07 4208] Allocated ID 2BF2F42600001070_0000000000000001 (parent 694990B800004950_0000000000000001)
+[T 20:12:07 4208] ==== Candidate to intercept: C:\Program Files\Java\jdk-21\bin\java.exe (1736) ====
+[T 20:12:07 4208] Lua: === Intercepted call to c:\program files\java\jdk-21\bin\java.exe ===
+[T 20:12:07 4208] Executing the following tracer actions:
+[T 20:12:07 4208] Tracer actions:
+[T 20:12:07 4208] pre_invocations(0)
+[T 20:12:07 4208] post_invocations(0)
+[T 20:12:07 4208] trace_languages(1): [java]
+[T 20:12:07 1736] Initializing tracer.
+[T 20:12:07 1736] Initializing tags.
+[T 20:12:07 1736] ID set to 2BF2F42600001070_0000000000000001 (parent 694990B800004950_0000000000000001)
+[T 20:12:07 1736] Passing through -javaagent:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 20:12:07 1736] Passing through -Xbootclasspath/a:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar to underlying JVM.
+[T 20:12:07 1736] Intercepted JVM creation with extra hidden args: ['-javaagent:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar' ] (result: 1, 0).
+[T 20:12:12 1724] Allocated ID D4563301000006BC_0000000000000001 (parent 7846EFB200001864_0000000000000001)
+[T 20:12:12 1724] ==== Candidate to intercept: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe (19680) ====
+[T 20:12:12 1724] Lua: === Intercepted call to c:\users\calda\appdata\roaming\code\user\globalstorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe ===
+[T 20:12:12 1724] Executing the following tracer actions:
+[T 20:12:12 1724] Tracer actions:
+[T 20:12:12 1724] pre_invocations(0)
+[T 20:12:12 1724] post_invocations(0)
+[T 20:12:12 1724] trace_languages(1): [java]
+[T 20:12:12 19680] Initializing tracer.
+[T 20:12:12 19680] Initializing tags.
+[T 20:12:12 19680] ID set to D4563301000006BC_0000000000000001 (parent 7846EFB200001864_0000000000000001)
+[T 20:12:12 19680] Allocated ID 31C043F400004CE0_0000000000000001 (parent D4563301000006BC_0000000000000001)
+[T 20:12:12 19680] ==== Candidate to intercept: C:\Windows\System32\cmd.exe (12676) ====
+[T 20:12:12 19680] Lua: === Intercepted call to c:\windows\system32\cmd.exe ===
+[T 20:12:12 19680] Executing the following tracer actions:
+[T 20:12:12 19680] Tracer actions:
+[T 20:12:12 19680] pre_invocations(0)
+[T 20:12:12 19680] post_invocations(0)
+[T 20:12:12 19680] trace_languages(1): [java]
+[T 20:12:12 12676] Initializing tracer.
+[T 20:12:12 12676] Initializing tags.
+[T 20:12:12 12676] ID set to 31C043F400004CE0_0000000000000001 (parent D4563301000006BC_0000000000000001)
+[T 20:15:45 12376] Initializing tracer.
+[T 20:15:45 12376] Initializing tags.
+[T 20:15:45 12376] CodeQL CLI version 2.19.2
+[T 20:15:45 12376] Initializing tracer.
+[T 20:15:45 12376] Initializing tags.
+[T 20:15:45 12376] Allocated ID 1E8730A000003058_0000000000000001 (parent )
+[T 20:15:45 12376] ==== Candidate to intercept: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe (12428) ====
+[T 20:15:45 12376] Lua: === Intercepted call to c:\users\calda\appdata\roaming\code\user\globalstorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe ===
+[T 20:15:45 12376] Executing the following tracer actions:
+[T 20:15:45 12376] Tracer actions:
+[T 20:15:45 12376] pre_invocations(0)
+[T 20:15:45 12376] post_invocations(0)
+[T 20:15:45 12376] trace_languages(1): [java]
+[T 20:15:45 12428] Initializing tracer.
+[T 20:15:45 12428] Initializing tags.
+[T 20:15:45 12428] ID set to 1E8730A000003058_0000000000000001 (parent root)
+[T 20:15:45 12428] Allocated ID 0066C3B00000308C_0000000000000001 (parent 1E8730A000003058_0000000000000001)
+[T 20:15:45 12428] ==== Candidate to intercept: C:\Windows\System32\cmd.exe (17232) ====
+[T 20:15:45 12428] Lua: === Intercepted call to c:\windows\system32\cmd.exe ===
+[T 20:15:45 12428] Executing the following tracer actions:
+[T 20:15:45 12428] Tracer actions:
+[T 20:15:45 12428] pre_invocations(0)
+[T 20:15:45 12428] post_invocations(0)
+[T 20:15:45 12428] trace_languages(1): [java]
+[T 20:15:45 17232] Initializing tracer.
+[T 20:15:45 17232] Initializing tags.
+[T 20:15:45 17232] ID set to 0066C3B00000308C_0000000000000001 (parent 1E8730A000003058_0000000000000001)
+[T 20:15:45 17232] Allocated ID D0A84AF400004350_0000000000000001 (parent 0066C3B00000308C_0000000000000001)
+[T 20:15:45 17232] ==== Candidate to intercept: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\java\bin\java.exe (13864) ====
+[T 20:15:45 17232] Lua: === Intercepted call to c:\users\calda\appdata\roaming\code\user\globalstorage\github.vscode-codeql\distribution1\codeql\tools\win64\java\bin\java.exe ===
+[T 20:15:45 17232] Executing the following tracer actions:
+[T 20:15:45 17232] Tracer actions:
+[T 20:15:45 17232] pre_invocations(0)
+[T 20:15:45 17232] post_invocations(0)
+[T 20:15:45 17232] trace_languages(1): [java]
+[T 20:15:45 13864] Initializing tracer.
+[T 20:15:45 13864] Initializing tags.
+[T 20:15:45 13864] ID set to D0A84AF400004350_0000000000000001 (parent 0066C3B00000308C_0000000000000001)
+[T 20:15:45 13864] Passing through -javaagent:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin to underlying JVM.
+[T 20:15:45 13864] Passing through -Xbootclasspath/a:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar to underlying JVM.
+[T 20:15:46 13864] Intercepted JVM creation with extra hidden args: ['-javaagent:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar=ignore-project,java,kotlin' '-Xbootclasspath/a:C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\java\tools\codeql-java-agent.jar' ] (result: 1, 0).
+[T 20:15:46 13864] Allocated ID EB05008700003628_0000000000000001 (parent D0A84AF400004350_0000000000000001)
+[T 20:15:46 13864] ==== Candidate to intercept: C:\Users\calda\AppData\Roaming\Code\User\globalStorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe (13444) ====
+[T 20:15:46 13864] Lua: === Intercepted call to c:\users\calda\appdata\roaming\code\user\globalstorage\github.vscode-codeql\distribution1\codeql\tools\win64\runner.exe ===
+[T 20:15:46 13864] Executing the following tracer actions:
+[T 20:15:46 13864] Tracer actions:
+[T 20:15:46 13864] pre_invocations(0)
+[T 20:15:46 13864] post_invocations(0)
+[T 20:15:46 13864] trace_languages(1): [java]
+[T 20:15:46 13444] Initializing tracer.
+[T 20:15:46 13444] Initializing tags.
+[T 20:15:46 13444] ID set to EB05008700003628_0000000000000001 (parent D0A84AF400004350_0000000000000001)
+[T 20:15:46 13444] Allocated ID D953E8F000003484_0000000000000001 (parent EB05008700003628_0000000000000001)
+[T 20:15:46 13444] ==== Candidate to intercept: C:\Windows\System32\cmd.exe (9236) ====
+[T 20:15:46 13444] Lua: === Intercepted call to c:\windows\system32\cmd.exe ===
+[T 20:15:46 13444] Executing the following tracer actions:
+[T 20:15:46 13444] Tracer actions:
+[T 20:15:46 13444] pre_invocations(0)
+[T 20:15:46 13444] post_invocations(0)
+[T 20:15:46 13444] trace_languages(1): [java]
+[T 20:15:46 9236] Initializing tracer.
+[T 20:15:46 9236] Initializing tags.
+[T 20:15:46 9236] ID set to D953E8F000003484_0000000000000001 (parent EB05008700003628_0000000000000001)

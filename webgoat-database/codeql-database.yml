@@ -1,0 +1,39 @@
+---
+sourceLocationPrefix: C:\Users\calda\OneDrive\Ambiente de Trabalho\mestrado-meim\cs\CS_MOD_2_PARTE_2
+baselineLinesOfCode: 18359
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+inProgress:
+  primaryLanguage: java
+  installedExtractors:
+    cpp:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/cpp
+    csharp:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/csharp
+    csv:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/csv
+    go:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/go
+    html:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/html
+    java:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/java
+    javascript:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/javascript
+    properties:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/properties
+    python:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/python
+    ruby:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/ruby
+    swift:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/swift
+    xml:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/xml
+    yaml:
+     - C:/Users/calda/AppData/Roaming/Code/User/globalStorage/github.vscode-codeql/distribution1/codeql/yaml
+creationMetadata:
+  cliVersion: 2.19.2
+  creationTime: 2024-10-24T20:15:45.335708900Z
+finalised: false
